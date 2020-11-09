@@ -1,0 +1,32 @@
+<?php 
+require_once 'inc/header.php';
+ ?>
+ <?php 
+require_once 'inc/nav.php';
+  ?>
+
+   <div class="row">
+      <div class="col-lg-8">
+
+
+
+
+
+
+  </div>
+
+<!-- Side Bar  -->
+ <?php 
+include "inc/sidebar.php";
+ ?>
+<!-- Side Bar  -->
+</div>
+</div>
+
+
+
+  
+<?php 
+include "inc/footer.php";
+
+ ?>
