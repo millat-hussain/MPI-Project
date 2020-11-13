@@ -77,7 +77,7 @@
               </div>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="#">Notice </a>
+              <a class="nav-link" href="notice.php">Notice </a>
             </li>
             <li class="nav-item ">
               <a class="nav-link" href="#">E-learning</a>
@@ -99,7 +99,7 @@
               <a class="nav-link" href="Communication.php">Contact</a>
             </li>
               <li class="nav-item">
-              <a class="nav-link" href="Communication.php">Citizen's</a>
+              <a class="nav-link" href="Citizen.php">Citizen's</a>
             </li>
           </ul>
         </div>

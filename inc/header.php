@@ -1,3 +1,14 @@
+<?php
+
+include "Database/Config.php";
+include "Database/Database.php";
+include "Database/helpars.php";
+$db = new Database();
+$help = new formet();
+
+?>
+
+
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -9,8 +20,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+
+ 
+
+
 </head>
 
 <body>
@@ -57,11 +73,11 @@
             <form action="">
               <div class="form-group">
                 <label for="email">Email address:</label>
-                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                <input type="email" class="form-control" required="1" placeholder="Enter email" id="email">
               </div>
               <div class="form-group">
                 <label for="pwd">Password:</label>
-                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                <input type="password" class="form-control" required="1" placeholder="Enter password" id="pwd">
               </div>
               <div class="form-group form-check">
                 <label class="form-check-label">

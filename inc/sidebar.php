@@ -37,19 +37,23 @@
           </div>
           <div class="mt-1  text-center">
             <h3 class="bg-danger p-2 text-white rounded text-center">Photo Gallery</h3>
-            <div class="row">
-                  <div class="col-lg-6">
+            <div class="d-flex">
+
+                  <div class="dj">
+
                     <img class="img-fluid" src="img/owl3.jpg" alt="">
                   </div>
-                  <div class="col-lg-6">
+                  <div class="dj">
                     <img class="img-fluid" src="img/owl3.jpg" alt="">
                   </div>
-                  <div class="col-lg-6">
+                  <div class="dj">
                     <img class="img-fluid" src="img/owl3.jpg" alt="">
                   </div>
-                  <div class="col-lg-6">
+                  <div class="dj">
                     <img class="img-fluid" src="img/owl3.jpg" alt="">
-                  </div>
+
+
+              </div>
               <!-- <p><a class="underline" href="">More Photos</a></p> -->
             </div>
           </div>

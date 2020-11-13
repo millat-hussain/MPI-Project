@@ -21,17 +21,27 @@ include"inc/newheadline.php";
           <h4 class="text-primary">Notice Bord</h4>
           <div class="border p-2 text-dark">
             <marquee  behavior="scroll" direction="up" scrollamount="2">
+            <?php
 
-                <p><a href="">1. List of stipends for 2nd, 4th, 6th and 8th   semester students 19/05/2020</a></p>
-                <p><a href="">2. 2nd 4th 6th and 7th episode stipend notice   12/05/2020</a></p> 
-                <p><a href="">1.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a></p>
-                <p><a href="">1.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a></p>
-                <p><a href="">1.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a></p>
-                <p><a href="">1.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a></p> 
-                <p><a href="">1.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a></p>
+            $query ="SELECT * FROM notice ORDER BY id DESC LIMIT 5";
+            $runqery =$db->select($query);
+            if ($runqery) {
+
+              $i=0;
+             while ($rasult =$runqery->fetch_assoc()) {
+              $i++;
+            ?>
+  <p><a href="">
+  <?php echo $i ?>. <?php echo  $help->textSorten($rasult['notice']) ;?></a> <strong class="text-danger"><?php echo $help->tfrom($rasult['time']);?>
+  
+  </strong></p> 
+
+<?php
+}}
+?>
             </marquee> 
           </div>
-       <a href="" class="float-right btn btn-info mt-1 mb-1">See All</a>
+       <a href="notice.php" class="float-right btn btn-info mt-1 mb-1">See All</a>
 
         </div>
         <div class="event mt-3">
